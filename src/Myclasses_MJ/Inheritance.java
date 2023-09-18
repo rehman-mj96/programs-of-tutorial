@@ -1,3 +1,5 @@
+package Myclasses_MJ;
+
 class Base {
     public int x;
 
