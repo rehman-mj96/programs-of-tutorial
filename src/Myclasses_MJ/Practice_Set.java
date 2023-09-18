@@ -1,3 +1,5 @@
+package Myclasses_MJ;
+
 abstract class Pen {
     abstract void write();
 

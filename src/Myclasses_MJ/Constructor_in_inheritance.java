@@ -1,35 +1,35 @@
 package Myclasses_MJ;
-class Base {
-    Base() {
+class Base1 {
+    Base1() {
         System.out.println("I am a constructor!");
     }
 
-    Base(int x) {
+    Base1(int x) {
         System.out.println("I am an overloaded constructor of base class with a value of x as : "+ x);
     }
 
 }
 
-class derived extends Base {
-    derived() {
+class derived1 extends Base1 {
+    derived1() {
 
         //super(0);
         System.out.println("I am a dervied class contructor!");
     }
 
-    derived(int x, int y) {
+    derived1(int x, int y) {
         super(x);
         System.out.println("I am an overloaded contructor with the value of y as: " + y);
     }
 }
 
-class childofderived extends derived {
-    childofderived() {
+class childofderived1 extends derived1 {
+    childofderived1() {
         System.out.println("I am a child of derived class constructor!");
     }
 
-    childofderived(int x, int y, int z) {
-        super(x, y);
+    childofderived1(int x, int y, int z) {
+        super(int x;int y);
         System.out.println("I am an overloaded contructor of child of derived class with the value of z as: " + z);
     }
 }
@@ -37,7 +37,7 @@ class childofderived extends derived {
 public class Constructor_in_inheritance {
     public static void main(String[] args) {
         //Base b = new Base();
-       //derived d = new derived(14, 4);
-        childofderived cd = new childofderived(11, 14, 16);
+       derived1 d = new derived1(14, 4);
+        childofderived1 cd = new childofderived1(11, 14, 16);
     }
 }
