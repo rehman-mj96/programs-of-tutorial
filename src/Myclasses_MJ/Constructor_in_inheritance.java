@@ -29,7 +29,7 @@ class childofderived1 extends derived1 {
     }
 
     childofderived1(int x, int y, int z) {
-        super(int x;int y);
+        super( x,  y);
         System.out.println("I am an overloaded contructor of child of derived class with the value of z as: " + z);
     }
 }
