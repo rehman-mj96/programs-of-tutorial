@@ -1,4 +1,4 @@
-package Myclasses_MJ;
+
 
 class Mythr2 implements Runnable {
     public void Mythr2(Runnable r) {

@@ -1,4 +1,3 @@
-package Myclasses_MJ;
 class Employee{
     int salary;
     String name;

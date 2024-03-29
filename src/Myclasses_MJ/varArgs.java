@@ -1,5 +1,3 @@
-package Myclasses_MJ;
-
 public class varArgs {
     public static int sum(int x, int ...arr){
         int result= x;

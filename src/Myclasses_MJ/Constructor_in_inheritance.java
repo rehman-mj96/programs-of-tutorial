@@ -1,4 +1,3 @@
-package Myclasses_MJ;
 class Base1 {
     Base1() {
         System.out.println("I am a constructor!");
