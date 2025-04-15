@@ -1,6 +1,4 @@
 package Myclasses_MJ;
-import java.util.*;
-
 
 public class String_builder {
     public static void main(String[] args) {

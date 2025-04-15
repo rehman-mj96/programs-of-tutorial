@@ -8,8 +8,8 @@ class Library {
     public String[] issuedBooks = new String[10];
 
     public void returnBook(String book) {
-       
-        for (int i = 0; i <NoofBookIssued ; i++) { 
+
+        for (int i = 0; i < NoofBookIssued; i++) {
             if (issuedBooks[i] == book) {
                 listofbooks[NoofBookPresent] = book;
                 NoofBookPresent++;
@@ -32,20 +32,20 @@ class Library {
 
     public void issueBook(String book) {
         for (int i = 0; i < NoofBookPresent; i++) {
-                if (book == listofbooks[i]) {
-                    issuedBooks[NoofBookIssued] = book;
-                    NoofBookIssued++;
-                    System.out.println("Book is issued!");
-                    for (int j = i; j < NoofBookPresent; j++) {
-                        listofbooks[j] = listofbooks[j + 1];
-                        
-                    }
-                    NoofBookPresent--;       
-                    break;
+            if (book == listofbooks[i]) {
+                issuedBooks[NoofBookIssued] = book;
+                NoofBookIssued++;
+                System.out.println("Book is issued!");
+                for (int j = i; j < NoofBookPresent; j++) {
+                    listofbooks[j] = listofbooks[j + 1];
+
                 }
-        } 
+                NoofBookPresent--;
+                break;
+            }
+        }
     }
-            
+
     public void removeBook(String book) {
         for (int i = 0; i < 20; i++) {
             if (book == listofbooks[i]) {

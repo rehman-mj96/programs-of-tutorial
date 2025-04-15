@@ -1,5 +1,12 @@
 package Myclasses_MJ;
 
+interface BasicAnimal {
+    void eat();
+
+    void sleep();
+
+}
+
 abstract class Pen {
     abstract void write();
 
@@ -16,13 +23,6 @@ class FountainPen extends Pen {
     }
 }
 
-interface BasicAnimal {
-    void eat();
-
-    void sleep();
-
-}
-
 class Monkey {
     void jumping() {
         System.out.println("Jumping");
@@ -34,7 +34,7 @@ class Monkey {
     }
 }
 
-class Human extends Monkey implements BasicAnimal{
+class Human extends Monkey implements BasicAnimal {
     void speak() {
         System.out.println("Hello sir!");
     }

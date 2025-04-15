@@ -7,13 +7,14 @@ class Base1 {
 
     Base1(int x) {
         System.out.println("I am an overloaded constructor of base class with a value of x as : " + x);
+// Demonstrates constructor inheritance in Java with base, derived, and child classes.
     }
 
 }
 
 class derived1 extends Base1 {
     derived1() {
-//        super(2);
+        super(2);
         System.out.println("I am a derived class constructor!");
     }
 
@@ -37,8 +38,8 @@ class childofderived1 extends derived1 {
 
 public class Constructor_in_inheritance {
     public static void main(String[] args) {
-        new Base();
-        new derived1(9,13);
+        new Base1();
+        new derived1(9, 13);
         new childofderived1();
         new childofderived1(11, 14, 16);
     }

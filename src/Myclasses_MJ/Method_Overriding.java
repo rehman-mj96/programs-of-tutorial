@@ -6,6 +6,7 @@ class A {
     public void harry() {
         System.out.println("I am harry");
     }
+
     public void meth1() {
         System.out.println("I am method1 of class A");
     }
@@ -22,12 +23,13 @@ class B extends A {
         return x;
     }
 }
+
 public class Method_Overriding {
     public static void main(String[] args) {
-        A a = new B();
-        //a.meth1();
-        
-        a.harry();
+        B a = new B();
         a.meth1();
+        a.harry();
+        System.out.println(a.getX());
+        System.out.println(a.getClass());
     }
 }

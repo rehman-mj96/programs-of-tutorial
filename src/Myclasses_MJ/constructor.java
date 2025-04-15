@@ -1,4 +1,5 @@
 package Myclasses_MJ;
+
 class MyEmployee {
     private int id;
     private String name;
@@ -8,9 +9,13 @@ class MyEmployee {
         name = myName;
     }
 
-    public String getName() { return name; }
+    public String getName() {
+        return name;
+    }
 
-    public int getId() { return id; }
+    public int getId() {
+        return id;
+    }
 
     //public void setName(String n) { this.name = n; }
 

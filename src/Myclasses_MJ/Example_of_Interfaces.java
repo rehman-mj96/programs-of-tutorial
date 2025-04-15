@@ -37,27 +37,32 @@ class MySmartPhone extends CellPhone implements Wifi, Camera {
     public void takeSnap() {
         System.out.println("Takind Snap ...");
     }
+
     @Override
     public void recordVideo() {
         System.out.println("Recording Video");
     }
+
     @Override
     public String[] getNetworks() {
         System.out.println("Getting list of Networks");
-        String[] networkList = { "realme", "Saqib", "Infinix" };
+        String[] networkList = {"realme", "Saqib", "Infinix"};
         return networkList;
     }
+
     @Override
     public void connectToNetworks(String network) {
         System.out.println("Connecting to network " + network);
     }
+
     @Override
     public void pickCall() {
         System.out.println("Connecting to the Call");
     }
+
     @Override
     public void callNumber(int number) {
-        System.out.println("Calling... "+number);
+        System.out.println("Calling... " + number);
     }
 }
 

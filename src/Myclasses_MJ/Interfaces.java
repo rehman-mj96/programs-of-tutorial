@@ -1,9 +1,9 @@
 package Myclasses_MJ;
 
 interface Bicycle {
-    public void speedUp(int increament);
+    void speedUp(int increment);
 
-    public void applyBreaks(int decreament);
+    void applyBreaks(int decrement);
 
 }
 
@@ -15,24 +15,24 @@ interface BlowHorn {
 }
 
 class AvonCycle implements Bicycle, BlowHorn {
-    
-    public int speed = 7;
-    
-    @Override
-    public void speedUp(int increament) {
-        speed += increament; 
-       System.out.println("Speeding upto "+ speed); 
 
-        
+    public int speed = 7;
+
+    @Override
+    public void speedUp(int increment) {
+        speed += increment;
+        System.out.println("Speeding up to " + speed);
+
+
     }
 
     @Override
-    public void applyBreaks(int decreament) {
-        speed -= decreament;
+    public void applyBreaks(int decrement) {
+        speed -= decrement;
         System.out.println("applying breaks to decrease the speed to " + speed);
 
     }
-    
+
     @Override
     public void BlowHornk3g() {
         System.out.println("Kabhi khushi Kabhi gum pee pee pee");

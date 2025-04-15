@@ -1,14 +1,14 @@
 package Myclasses_MJ;
 
-class Employee{
+class Employee {
     int salary;
     String name;
 
-    public int getSalary(){
+    public int getSalary() {
         return salary;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
@@ -18,25 +18,26 @@ class Employee{
     }
 }
 
-    class square {
-        int side;
+class square {
+    int side;
 
-        public int area() {
-            return side * side;
-        }
-
-        public int perimeter() {
-            return 4 * side;
-        } 
+    public int area() {
+        return side * side;
     }
 
-    class Circle {
-        float r;
-        
-        public float Area() {
-            return 3.14f * r * r;
-        }
+    public int perimeter() {
+        return 4 * side;
     }
+}
+
+class Circle {
+    float r;
+
+    public float Area() {
+        return 3.14f * r * r;
+    }
+}
+
 public class chapter8_PS {
     public static void main(String[] args) {
         // Problem 1 :
@@ -50,8 +51,8 @@ public class chapter8_PS {
        System.out.println("The area of the square is " + mySquare.area());
        System.out.println("The Perimeter of the square is " + mySquare.perimeter());
         */
-       Circle Cr = new Circle();
-       Cr.r = 7;
-       System.out.println("The area of the Circle is "+ Cr.Area());       
+        Circle Cr = new Circle();
+        Cr.r = 7;
+        System.out.println("The area of the Circle is " + Cr.Area());
     }
 }

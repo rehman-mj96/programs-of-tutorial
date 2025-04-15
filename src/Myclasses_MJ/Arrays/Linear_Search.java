@@ -2,7 +2,7 @@ package Myclasses_MJ.Arrays;
 
 public class Linear_Search {
     public static void main(String[] args) {
-        int[] nums = { 28, 45, 23, 1, 42, 13 };
+        int[] nums = {28, 45, 23, 1, 42, 13};
         int target = 2;
         int ans = linear_Search(nums, target);
         System.out.println(ans);

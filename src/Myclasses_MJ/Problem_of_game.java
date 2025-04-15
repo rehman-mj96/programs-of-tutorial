@@ -7,6 +7,7 @@ class Game {
     private int gNo;
     private int random;
     private int count = 0;
+
     Game() {
         Random rand = new Random();
         this.random = rand.nextInt(100);
@@ -16,7 +17,7 @@ class Game {
     public int getRand() {
         return random;
     }
-    
+
     public void takeUserInput() {
         Scanner sc = new Scanner(System.in);
         gNo = sc.nextInt();
@@ -25,22 +26,20 @@ class Game {
     public boolean isCorrectNo() {
         count++;
         if (gNo == random) {
-                
+
             System.out.println("You have guessed the right Number!");
             return true;
-            }
+        } else if (gNo < random) {
+            System.out.println("Your guessed number is less than the correct number");
+            return false;
+        } else {
+            System.out.println("Your guessed number is greater than the correct number");
+            return false;
+        }
 
-            else if (gNo < random) {
-                System.out.println("Your guessed number is less than the correct number");
-                return false;
-            } else {
-                System.out.println("Your guessed number is greater than the correct number");
-                return false;
-            }
-            
     }
-    
-    
+
+
     public int score() {
         return count;
     }

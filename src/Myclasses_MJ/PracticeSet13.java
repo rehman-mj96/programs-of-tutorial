@@ -5,10 +5,9 @@ class MyNewThr1 extends Thread {
     public void run() {
         int i = 0;
         while (i < 4000) {
-            try{
+            try {
                 Thread.sleep(200);
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 System.out.println(e);
             }
             System.out.println("Good morning...");
@@ -16,14 +15,14 @@ class MyNewThr1 extends Thread {
         }
     }
 }
+
 class MyNewThr2 extends Thread {
     public void run() {
         int i = 0;
-        while (i<4000) {
-            try{
+        while (i < 4000) {
+            try {
                 Thread.sleep(200);
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 System.out.println(e);
             }
             System.out.println("Welcome...");
@@ -31,6 +30,7 @@ class MyNewThr2 extends Thread {
         }
     }
 }
+
 public class PracticeSet13 {
     public static void main(String[] args) {
         MyNewThr1 p = new MyNewThr1();
@@ -41,6 +41,6 @@ public class PracticeSet13 {
         System.out.println(p2.getPriority());
         p.start();
         p2.start();
-        
+
     }
 }

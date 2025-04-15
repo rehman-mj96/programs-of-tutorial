@@ -1,7 +1,5 @@
 package Myclasses_MJ.Arrays;
 
-import java.util.Arrays;
-
 public class Search_in_str {
     public static void main(String[] args) {
         String name = "Mujahid";

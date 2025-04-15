@@ -1,32 +1,33 @@
 package Myclasses_MJ;
 
 public class Method_Overloading {
-    static void foo(){
+    static void foo() {
         System.out.println("Good Morning bro");
     }
 
-    static void foo(int a){
+    static void foo(int a) {
         System.out.println("Good Morning " + a + " bro!");
     }
 
-    static int foo(int a, int b){
+    static int foo(int a, int b) {
         System.out.println("Good Morning " + a + " bro!");
         System.out.println("Good Morning " + b + " bro!");
         return 3;
     }
-    
-    static void change(int a){
-        int x= 98;
+
+    static void change(int a) {
+        int x = 98;
     }
 
-    static void tellJoke(){
-        System.out.println("I invented a new word \n"+ "Plagiarism");
+    static void tellJoke() {
+        System.out.println("I invented a new word \n" + "Plagiarism");
 
     }
 
-    static void change2(int [] array){
+    static void change2(int[] array) {
         array[0] = 85;
     }
+
     public static void main(String[] args) {
         // tellJoke();
         /*int x = 45;
