@@ -185,9 +185,9 @@ public class PatternsDemo {
             System.out.println("2. Half Star Pyramid");
             System.out.println("3. Hollow Rectangle");
             System.out.println("4. Solid Rectangle");
-            System.out.println("5. Floye's Triangle");
+            System.out.println("5. Floyd's Triangle");
             System.out.println("6. Palindromic Pyramid Pattern");
-            System.out.print("Enter choice (1-5): ");
+            System.out.print("Enter choice (1-6): ");
 
             int choice = sc.nextInt();
             Patterns pattern = PatternFactory.createPattern(choice, sc);
